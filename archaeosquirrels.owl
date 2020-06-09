@@ -1,0 +1,660 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://archaeoinformatics.link#"
+     xml:base="http://archaeoinformatics.link"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:sf="http://www.opengis.net/ont/sf#"
+     xmlns:wd="http://www.wikidata.org/entity/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:ldi="http://ladi.sparqlunicorn.link#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wdt="http://www.wikidata.org/prop/direct/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:epsg="http://www.opengis.net/def/crs/EPSG/0/"
+     xmlns:fort="http://hadrianswall.squirrel.link/fort#"
+     xmlns:lado="http://archaeoinformatics.link#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcmit="http://purl.org/dc/terms/DCMIType/"
+     xmlns:semgis="http://semgis.de/geodata#"
+     xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
+    <owl:Ontology rdf:about="http://archaeoinformatics.link/ontology#">
+        <dc:contributor>Florian Thiery</dc:contributor>
+        <dc:creator>Florian Thiery</dc:creator>
+        <dc:description xml:lang="en">This ontology contains classes to descibe research squirrel&apos;s archaeological items.</dc:description>
+        <dc:publisher>Research Squirrel Engineers (RSE)</dc:publisher>
+        <dc:rights>CC BY 4.0</dc:rights>
+        <dc:subject>archaeology</dc:subject>
+        <rdfs:comment xml:lang="en">This ontology contains classes to descibe research squirrel&apos;s archaeological items.</rdfs:comment>
+        <rdfs:label xml:lang="en">The ArchaeoSquirrel Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:comment xml:lang="en">A statement or formal explanation of the meaning of a concept.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://www.w3.org/2004/02/skos/core&quot;</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:comment xml:lang="en">A resource has no more than one value of skos:prefLabel per language tag, and no more than one value of skos:prefLabel without language tag.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The range of skos:prefLabel is the class of RDF plain literals.</rdfs:comment>
+        <rdfs:comment xml:lang="en">skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">preferred label</rdfs:label>
+        <skos:definition xml:lang="en">The preferred lexical label for a resource, in a given language.</skos:definition>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Image -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/dcmitype/Image">
+        <rdfs:comment xml:lang="en">Examples include images and photographs of physical objects, paintings, prints, drawings, other images and graphics, animations and moving pictures, film, diagrams, maps, musical notation. Note that Image may include both electronic and physical representations.</rdfs:comment>
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+        <skos:definition xml:lang="en">A visual representation other than text.</skos:definition>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://archaeoinformatics.link#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#consistsOf">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment xml:lang="en">consists of material</rdfs:comment>
+        <rdfs:label xml:lang="en">consists of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#containsToPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#containsToPeriod">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment xml:lang="en">contains to period</rdfs:comment>
+        <rdfs:label xml:lang="en">in period</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#hasImage -->
+
+    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#hasImage">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#hasShape">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment xml:lang="en">has shape</rdfs:comment>
+        <rdfs:label xml:lang="en">has shape</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#hasThumbnail -->
+
+    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#hasThumbnail">
+        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#hasImage"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">has a thumbnail image</rdfs:comment>
+        <rdfs:label xml:lang="en">has thumbnail</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#isStatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#isStatedBy">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment xml:lang="en">An object ist decribed by a statement.</rdfs:comment>
+        <rdfs:label xml:lang="de">angegeben durch</rdfs:label>
+        <rdfs:label xml:lang="en">is stated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#wasFoundAt -->
+
+    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#wasFoundAt">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment xml:lang="en">The item was found at X</rdfs:comment>
+        <rdfs:label xml:lang="en">found at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#wasMadeBy -->
+
+    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#wasMadeBy">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#wasMadeUsing -->
+
+    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#wasMadeUsing">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment xml:lang="en">was made using a certain technique</rdfs:comment>
+        <rdfs:label xml:lang="en">was made using</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P2_has_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2_has_type">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment>This property allows sub typing of CRM entities - a form of specialisation – through the use of a terminological hierarchy, or thesaurus. 
+The CRM is intended to focus on the high-level entities and relationships needed to describe data structures. Consequently, it does not specialise entities any further than is required for this immediate purpose. However, entities in the isA hierarchy of the CRM may by specialised into any number of sub entities, which can be defined in the E55 Type hierarchy. E51 Contact Point, for example, may be specialised into “e-mail address”, “telephone number”, “post office box”, “URL” etc. none of which figures explicitly in the CRM hierarchy. Sub typing obviously requires consistency between the meaning of the terms assigned and the more general intent of the CRM entity in question.
+</rdfs:comment>
+        <rdfs:label xml:lang="fr">est de type</rdfs:label>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+        <rdfs:label xml:lang="de">hat den Typus</rdfs:label>
+        <rdfs:label xml:lang="pt">é do tipo</rdfs:label>
+        <rdfs:label xml:lang="el">έχει τύπο</rdfs:label>
+        <rdfs:label xml:lang="ru">имеет тип</rdfs:label>
+        <rdfs:label xml:lang="zh">有类型</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://archaeoinformatics.link#hasCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#hasCondition">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">has condition</rdfs:comment>
+        <rdfs:label xml:lang="en">has condition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#hasExactDate -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#hasExactDate">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">has an exact date</rdfs:comment>
+        <rdfs:label xml:lang="en">exact date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#hasImage -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#hasImage">
+        <rdfs:range rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#inArchive -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#inArchive">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Item is stored in archive sitory X.</rdfs:comment>
+        <rdfs:label xml:lang="en">in archive</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#inDepository -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#inDepository">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Item is stored in depository X.</rdfs:comment>
+        <rdfs:label xml:lang="en">in depository</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#statementComment -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementComment">
+        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="de">Statementkommentar</rdfs:label>
+        <rdfs:label xml:lang="en">statement comment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#statementDocument -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementDocument">
+        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="de">Statementdokument</rdfs:label>
+        <rdfs:label xml:lang="en">statement document</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#statementLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementLabel">
+        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="de">Statementbezeichner</rdfs:label>
+        <rdfs:label xml:lang="en">statement label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#statementNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementNumber">
+        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="de">Statementnummer</rdfs:label>
+        <rdfs:label xml:lang="en">statement number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#statementProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementProperties">
+        <rdfs:comment xml:lang="en">generic statement properties</rdfs:comment>
+        <rdfs:label xml:lang="de">Statementeigenschaften</rdfs:label>
+        <rdfs:label xml:lang="en">statement properties</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#statementType -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementType">
+        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="de">Statementtyp</rdfs:label>
+        <rdfs:label xml:lang="en">statement type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://archaeoinformatics.link#wasMadeBy -->
+
+    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#wasMadeBy">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://archaeoinformatics.link#Database -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link#Database">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object"/>
+        <rdfs:label xml:lang="en">Database</rdfs:label>
+        <rdfs:label xml:lang="de">Datenbank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
+        <rdfs:comment>This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. 
+It is an abstract concept providing for three general properties:
+1.	Identification by name or appellation, and in particular by a preferred identifier
+2.	Classification by type, allowing further refinement of the specific subclass an instance belongs to 
+3.	Attachment of free text for the expression of anything not captured by formal properties
+With the exception of E59 Primitive Value, all other classes within the CRM are directly or indirectly specialisations of E1 CRM Entity. 
+</rdfs:comment>
+        <rdfs:label xml:lang="en">CRM Entity</rdfs:label>
+        <rdfs:label xml:lang="de">CRM Entität</rdfs:label>
+        <rdfs:label xml:lang="ru">CRM Сущность</rdfs:label>
+        <rdfs:label xml:lang="zh">CRM实体</rdfs:label>
+        <rdfs:label xml:lang="pt">Entidade CRM</rdfs:label>
+        <rdfs:label xml:lang="fr">Entité CRM</rdfs:label>
+        <rdfs:label xml:lang="el">Οντότητα CIDOC CRM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment>This class comprises all persistent physical items that are purposely created by human activity.
+This class comprises man-made objects, such as a swords, and man-made features, such as rock art. No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Man-Made Thing. 
+</rdfs:comment>
+        <rdfs:label xml:lang="fr">Chose matérielle fabriquée</rdfs:label>
+        <rdfs:label xml:lang="pt">Coisa Material Fabricada</rdfs:label>
+        <rdfs:label xml:lang="de">Hergestelltes</rdfs:label>
+        <rdfs:label xml:lang="en">Physical Man-Made Thing</rdfs:label>
+        <rdfs:label xml:lang="el">Ανθρωπογενές Υλικό Πράγμα</rdfs:label>
+        <rdfs:label xml:lang="ru">Физическая Рукотворная Вещь</rdfs:label>
+        <rdfs:label xml:lang="zh">人造实体物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment>This class comprises concepts denoted by terms from thesauri and controlled vocabularies used to characterize and classify instances of CRM classes. Instances of E55 Type represent concepts  in contrast to instances of E41 Appellation which are used to name instances of CRM classes. 
+E55 Type is the CRM’s interface to domain specific ontologies and thesauri. These can be represented in the CRM as subclasses of E55 Type, forming hierarchies of terms, i.e. instances of E55 Type linked via P127 has broader  term (has narrower term). Such hierarchies may be extended with additional properties. 
+</rdfs:comment>
+        <rdfs:label xml:lang="pt">Tipo</rdfs:label>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <rdfs:label xml:lang="fr">Type</rdfs:label>
+        <rdfs:label xml:lang="de">Typus</rdfs:label>
+        <rdfs:label xml:lang="el">Τύπος</rdfs:label>
+        <rdfs:label xml:lang="ru">Тип</rdfs:label>
+        <rdfs:label xml:lang="zh">类型</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E70_Thing -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment>This general class comprises discrete, identifiable, instances of E77 Persistent Item that are documented as single units, that either consist of matter or depend on being carried by matter and are characterized by relative stability.
+They may be intellectual products or physical things. They may for instance have a solid physical form, an electronic encoding, or they may be a logical concept or structure.
+</rdfs:comment>
+        <rdfs:label xml:lang="ru"></rdfs:label>
+        <rdfs:label xml:lang="fr">Chose</rdfs:label>
+        <rdfs:label xml:lang="pt">Coisa</rdfs:label>
+        <rdfs:label xml:lang="de">Sache</rdfs:label>
+        <rdfs:label xml:lang="en">Thing</rdfs:label>
+        <rdfs:label xml:lang="el">Πράγμα</rdfs:label>
+        <rdfs:label xml:lang="zh">万物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment>This class comprises identifiable immaterial items, such as a poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units. The encoding structure known as a &quot;named graph&quot; also falls under this class, so that each &quot;named graph&quot; is an instance of an E73 Information Object. 
+An E73 Information Object does not depend on a specific physical carrier, which can include human memory, and it can exist on one or more carriers simultaneously. 
+Instances of E73 Information Object of a linguistic nature should be declared as instances of the E33 Linguistic Object subclass. Instances of E73 Information Object of a documentary nature should be declared as instances of the E31 Document subclass. Conceptual items such as types and classes are not instances of E73 Information Object, nor are ideas without a reproducible expression. 
+ </rdfs:comment>
+        <rdfs:label xml:lang="en">Information Object</rdfs:label>
+        <rdfs:label xml:lang="de">Informationsgegenstand</rdfs:label>
+        <rdfs:label xml:lang="fr">Objet d&apos;information</rdfs:label>
+        <rdfs:label xml:lang="pt">Objeto de Informação</rdfs:label>
+        <rdfs:label xml:lang="el">Πληροφοριακό Αντικείμενο</rdfs:label>
+        <rdfs:label xml:lang="ru">Информационный Объект</rdfs:label>
+        <rdfs:label xml:lang="zh">信息物件</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment>This class comprises identifiable immaterial items that can be represented as sets of bit sequences, 
+	such as data sets, e-texts, images, audio or video items, software, etc., and are documented as single units. 
+	Any aggregation of instances of D1 Digital Object into a whole treated as single unit is also regarded as an instance of D1 Digital Object. 
+	This means that for instance, the content of a DVD, an XML file on it, and an element of this file, are regarded as distinct instances of 
+	D1 Digital Object, mutually related by the P106 is composed of (forms part of) property.
+A D1 Digital Object does not depend on a specific physical carrier, and it can exist on one or more carriers simultaneously.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">Digital Object</rdfs:label>
+        <rdfs:label xml:lang="de">Digitales Objekt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object"/>
+        <rdfs:comment>This class comprises instances of D1 Digital Object that are the direct result of a digital 
+	measurement or a formal derivative of it, containing quantitative properties of some physical things or other constellations of matter.
+	</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Object</rdfs:label>
+        <rdfs:label xml:lang="de">Datenobjekt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label xml:lang="de">OWL Thing</rdfs:label>
+        <rdfs:label xml:lang="en">OWL Thing</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://archaeoinformatics.link#ARS3D -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#ARS3D">
+        <rdf:type rdf:resource="http://archaeoinformatics.link#Database"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link#AfricanRedSlipWareObject -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#AfricanRedSlipWareObject">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">African Red Slip Ware Object</rdfs:label>
+        <rdfs:label xml:lang="de">African Red Slip Ware Objekt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link#ManufacturingObject -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#ManufacturingObject">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">Manufacturing Object</rdfs:label>
+        <rdfs:label xml:lang="de">Object zur Herstellung</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link#NAVIS -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#NAVIS">
+        <rdf:type rdf:resource="http://archaeoinformatics.link#Database"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link#Reconstruction -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#Reconstruction">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link#ShipCarrier -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#ShipCarrier">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link#Wreck -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#Wreck">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://archaeoinformatics.link#hasImage">
+        <rdfs:comment xml:lang="en">Has an Image, e.g. Thumbnail</rdfs:comment>
+        <rdfs:label xml:lang="en">has image</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://archaeoinformatics.link#wasMadeBy">
+        <rdfs:comment xml:lang="en">was made by (a certain person)</rdfs:comment>
+        <rdfs:label xml:lang="en">was made by</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
