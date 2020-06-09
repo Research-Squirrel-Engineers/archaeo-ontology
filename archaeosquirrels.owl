@@ -145,95 +145,6 @@
     
 
 
-    <!-- http://archaeoinformatics.link#consistsOf -->
-
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#consistsOf">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:comment xml:lang="en">consists of material</rdfs:comment>
-        <rdfs:label xml:lang="en">consists of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#containsToPeriod -->
-
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#containsToPeriod">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:comment xml:lang="en">contains to period</rdfs:comment>
-        <rdfs:label xml:lang="en">in period</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#hasImage -->
-
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#hasImage">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#hasShape -->
-
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#hasShape">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:comment xml:lang="en">has shape</rdfs:comment>
-        <rdfs:label xml:lang="en">has shape</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#hasThumbnail -->
-
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#hasThumbnail">
-        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#hasImage"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="en">has a thumbnail image</rdfs:comment>
-        <rdfs:label xml:lang="en">has thumbnail</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#isStatedBy -->
-
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#isStatedBy">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:comment xml:lang="en">An object ist decribed by a statement.</rdfs:comment>
-        <rdfs:label xml:lang="de">angegeben durch</rdfs:label>
-        <rdfs:label xml:lang="en">is stated by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#wasFoundAt -->
-
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#wasFoundAt">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:comment xml:lang="en">The item was found at X</rdfs:comment>
-        <rdfs:label xml:lang="en">found at</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#wasMadeBy -->
-
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#wasMadeBy">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#wasMadeUsing -->
-
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link#wasMadeUsing">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:comment xml:lang="en">was made using a certain technique</rdfs:comment>
-        <rdfs:label xml:lang="en">was made using</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.cidoc-crm.org/cidoc-crm/P2_has_type -->
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2_has_type">
@@ -253,6 +164,14 @@ The CRM is intended to focus on the high-level entities and relationships needed
     
 
 
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <rdfs:label xml:lang="en">has geometry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -264,139 +183,18 @@ The CRM is intended to focus on the high-level entities and relationships needed
     
 
 
-    <!-- http://archaeoinformatics.link#hasCondition -->
+    <!-- http://www.opengis.net/ont/geosparql#asGeoJSON -->
 
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#hasCondition">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">has condition</rdfs:comment>
-        <rdfs:label xml:lang="en">has condition</rdfs:label>
+    <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#asGeoJSON">
+        <rdfs:label xml:lang="en">as GeoJSON</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://archaeoinformatics.link#hasExactDate -->
+    <!-- http://www.opengis.net/ont/geosparql#asWKT -->
 
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#hasExactDate">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">has an exact date</rdfs:comment>
-        <rdfs:label xml:lang="en">exact date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#hasImage -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#hasImage">
-        <rdfs:range rdf:resource="http://purl.org/dc/dcmitype/Image"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#inArchive -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#inArchive">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Item is stored in archive sitory X.</rdfs:comment>
-        <rdfs:label xml:lang="en">in archive</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#inDepository -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#inDepository">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Item is stored in depository X.</rdfs:comment>
-        <rdfs:label xml:lang="en">in depository</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#statementComment -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementComment">
-        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="de">Statementkommentar</rdfs:label>
-        <rdfs:label xml:lang="en">statement comment</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#statementDocument -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementDocument">
-        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="de">Statementdokument</rdfs:label>
-        <rdfs:label xml:lang="en">statement document</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#statementLabel -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementLabel">
-        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="de">Statementbezeichner</rdfs:label>
-        <rdfs:label xml:lang="en">statement label</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#statementNumber -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementNumber">
-        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="de">Statementnummer</rdfs:label>
-        <rdfs:label xml:lang="en">statement number</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#statementProperties -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementProperties">
-        <rdfs:comment xml:lang="en">generic statement properties</rdfs:comment>
-        <rdfs:label xml:lang="de">Statementeigenschaften</rdfs:label>
-        <rdfs:label xml:lang="en">statement properties</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#statementType -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#statementType">
-        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link#statementProperties"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="de">Statementtyp</rdfs:label>
-        <rdfs:label xml:lang="en">statement type</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://archaeoinformatics.link#wasMadeBy -->
-
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link#wasMadeBy">
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/identifier -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system.</rdfs:comment>
-        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#asWKT">
+        <rdfs:label xml:lang="en">as well-known-text</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -624,15 +422,6 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <rdfs:label xml:lang="de">OWL Thing</rdfs:label>
-        <rdfs:label xml:lang="en">OWL Thing</rdfs:label>
-    </rdf:Description>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
@@ -664,89 +453,14 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://archaeoinformatics.link#ARS3D -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#ARS3D">
-        <rdf:type rdf:resource="http://archaeoinformatics.link#Database"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link#AfricanRedSlipWareObject -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#AfricanRedSlipWareObject">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-        <rdfs:label xml:lang="en">African Red Slip Ware Object</rdfs:label>
-        <rdfs:label xml:lang="de">African Red Slip Ware Objekt</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link#ManufacturingObject -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#ManufacturingObject">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-        <rdfs:label xml:lang="en">Manufacturing Object</rdfs:label>
-        <rdfs:label xml:lang="de">Object zur Herstellung</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link#NAVIS -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#NAVIS">
-        <rdf:type rdf:resource="http://archaeoinformatics.link#Database"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link#Reconstruction -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#Reconstruction">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link#ShipCarrier -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#ShipCarrier">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link#Wreck -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link#Wreck">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://archaeoinformatics.link#hasImage">
-        <rdfs:comment xml:lang="en">Has an Image, e.g. Thumbnail</rdfs:comment>
-        <rdfs:label xml:lang="en">has image</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://archaeoinformatics.link#wasMadeBy">
-        <rdfs:comment xml:lang="en">was made by (a certain person)</rdfs:comment>
-        <rdfs:label xml:lang="en">was made by</rdfs:label>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label xml:lang="en">OWL Thing</rdfs:label>
+        <rdfs:label xml:lang="de">OWL Thing</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
