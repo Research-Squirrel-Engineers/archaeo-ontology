@@ -210,6 +210,25 @@ The CRM is intended to focus on the high-level entities and relationships needed
     
 
 
+    <!-- http://archaeoinformatics.linkE53_Place -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.linkE53_Place">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment>This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter. 
+The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks. A Place can be determined by combining a frame of reference and a location with respect to this frame. It may be identified by one or more instances of E44 Place Appellation.
+ It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, we are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object – H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance.
+Any object can serve as a frame of reference for E53 Place determination. The model foresees the notion of a &quot;section&quot; of an E19 Physical Object as a valid E53 Place determination.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Lieu</rdfs:label>
+        <rdfs:label xml:lang="pt">Local</rdfs:label>
+        <rdfs:label xml:lang="de">Ort</rdfs:label>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+        <rdfs:label xml:lang="el">Τόπος</rdfs:label>
+        <rdfs:label xml:lang="ru">Место</rdfs:label>
+        <rdfs:label xml:lang="zh">地点</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://archaeoinformatics.link#Database -->
 
     <owl:Class rdf:about="http://archaeoinformatics.link#Database">
@@ -223,6 +242,7 @@ The CRM is intended to focus on the high-level entities and relationships needed
     <!-- http://archaeoinformatics.link/ontology#Dataset -->
 
     <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
     </owl:Class>
     
@@ -231,7 +251,7 @@ The CRM is intended to focus on the high-level entities and relationships needed
     <!-- http://archaeoinformatics.link/ontology#Wikidata -->
 
     <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Wikidata">
-        <rdfs:label xml:lang="en">Wikidata Classes</rdfs:label>
+        <rdfs:label xml:lang="en">Wikidata</rdfs:label>
     </owl:Class>
     
 
@@ -381,6 +401,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
 
     <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.linkE53_Place"/>
         <rdfs:label xml:lang="en">Spatial Object</rdfs:label>
     </owl:Class>
     
