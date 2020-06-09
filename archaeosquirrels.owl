@@ -422,6 +422,22 @@ The CRM is intended to focus on the high-level entities and relationships needed
     
 
 
+    <!-- http://archaeoinformatics.link/ontology#Dataset -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Dataset">
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#Wikidata -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Wikidata">
+        <rdfs:label xml:lang="en">Wikidata Classes</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
@@ -561,6 +577,24 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q194029 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q194029">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Wikidata"/>
+        <rdfs:label xml:lang="en">roman road</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q839954 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q839954">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Wikidata"/>
+        <rdfs:label xml:lang="en">archaeological site</rdfs:label>
     </owl:Class>
     
 
