@@ -522,6 +522,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#RomanRoad">
         <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Road"/>
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q194029"/>
         <rdfs:label xml:lang="en">Roman Road</rdfs:label>
     </owl:NamedIndividual>
     
