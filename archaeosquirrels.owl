@@ -239,11 +239,38 @@ Any object can serve as a frame of reference for E53 Place determination. The mo
     
 
 
+    <!-- http://archaeoinformatics.link/ontology#ConstructionalFeature -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#ConstructionalFeature">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:label xml:lang="en">Constructional Feature</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://archaeoinformatics.link/ontology#Dataset -->
 
     <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Dataset">
         <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#Fortification -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Fortification">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#ConstructionalFeature"/>
+        <rdfs:label xml:lang="en">Fortification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#Road -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Road">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#ConstructionalFeature"/>
+        <rdfs:label xml:lang="en">Road</rdfs:label>
     </owl:Class>
     
 
@@ -468,6 +495,35 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Wikidata"/>
         <rdfs:label xml:lang="en">archaeological site</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#Kastell -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#Kastell">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Kastell</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#RomanRoad -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#RomanRoad">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Road"/>
+        <rdfs:label xml:lang="en">Roman Road</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
