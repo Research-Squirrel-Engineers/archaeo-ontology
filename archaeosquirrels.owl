@@ -680,6 +680,16 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
+    <!-- http://archaeoinformatics.link/ontology#LimesRoad -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesRoad">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Road"/>
+        <rdfs:label xml:lang="en">Limes road</rdfs:label>
+        <rdfs:label xml:lang="de">Limesstraße</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://archaeoinformatics.link/ontology#MilitaryCamp -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#MilitaryCamp">
@@ -695,7 +705,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#RomanRoad">
         <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Road"/>
         <rdf:type rdf:resource="http://www.wikidata.org/entity/Q194029"/>
-        <rdfs:label xml:lang="en">Roman Road</rdfs:label>
+        <rdfs:label xml:lang="en">Roman road</rdfs:label>
         <rdfs:label xml:lang="de">römische Straße</rdfs:label>
     </owl:NamedIndividual>
     
