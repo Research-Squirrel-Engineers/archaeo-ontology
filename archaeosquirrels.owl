@@ -509,11 +509,32 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#Kastell -->
+    <!-- http://archaeoinformatics.link/ontology#Burgus -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#Kastell">
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#Burgus">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Burgus</rdfs:label>
+        <rdfs:label xml:lang="en">burgus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LegionaryCamp -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LegionaryCamp">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Legionslager</rdfs:label>
+        <rdfs:label xml:lang="en">legionary camp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#MilitaryCamp -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#MilitaryCamp">
         <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
         <rdfs:label xml:lang="de">Kastell</rdfs:label>
+        <rdfs:label xml:lang="en">military camp</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -524,6 +545,17 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Road"/>
         <rdf:type rdf:resource="http://www.wikidata.org/entity/Q194029"/>
         <rdfs:label xml:lang="en">Roman Road</rdfs:label>
+        <rdfs:label xml:lang="de">römische Straße</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#Watchtower -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#Watchtower">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Wachturm</rdfs:label>
+        <rdfs:label xml:lang="en">watchtower</rdfs:label>
     </owl:NamedIndividual>
     
 
