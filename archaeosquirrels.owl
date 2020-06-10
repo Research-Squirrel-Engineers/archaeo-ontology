@@ -251,7 +251,6 @@
 
     <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link/ontology#romanName">
         <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link/ontology#name"/>
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -667,6 +666,16 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
         <rdfs:label xml:lang="de">Legionslager</rdfs:label>
         <rdfs:label xml:lang="en">legionary camp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesPart -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesPart">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Limesabschnitt</rdfs:label>
+        <rdfs:label xml:lang="en">limes part</rdfs:label>
     </owl:NamedIndividual>
     
 
