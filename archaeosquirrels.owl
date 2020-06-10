@@ -210,25 +210,6 @@ The CRM is intended to focus on the high-level entities and relationships needed
     
 
 
-    <!-- http://archaeoinformatics.linkE53_Place -->
-
-    <owl:Class rdf:about="http://archaeoinformatics.linkE53_Place">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:comment>This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter. 
-The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks. A Place can be determined by combining a frame of reference and a location with respect to this frame. It may be identified by one or more instances of E44 Place Appellation.
- It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, we are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object – H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance.
-Any object can serve as a frame of reference for E53 Place determination. The model foresees the notion of a &quot;section&quot; of an E19 Physical Object as a valid E53 Place determination.</rdfs:comment>
-        <rdfs:label xml:lang="fr">Lieu</rdfs:label>
-        <rdfs:label xml:lang="pt">Local</rdfs:label>
-        <rdfs:label xml:lang="de">Ort</rdfs:label>
-        <rdfs:label xml:lang="en">Place</rdfs:label>
-        <rdfs:label xml:lang="el">Τόπος</rdfs:label>
-        <rdfs:label xml:lang="ru">Место</rdfs:label>
-        <rdfs:label xml:lang="zh">地点</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://archaeoinformatics.link#Database -->
 
     <owl:Class rdf:about="http://archaeoinformatics.link#Database">
@@ -262,6 +243,16 @@ Any object can serve as a frame of reference for E53 Place determination. The mo
     <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Fortification">
         <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#ConstructionalFeature"/>
         <rdfs:label xml:lang="en">Fortification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#HistoricPerson -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#HistoricPerson">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">historic person</rdfs:label>
+        <rdfs:label xml:lang="de">historische Person</rdfs:label>
     </owl:Class>
     
 
@@ -304,6 +295,24 @@ With the exception of E59 Primitive Value, all other classes within the CRM are 
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E21_Person -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E21_Person">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment>This class comprises real persons who live or are assumed to have lived. 
+Legendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CRM does not propose a specific form to support reasoning about possible identity.
+</rdfs:comment>
+        <rdfs:label xml:lang="de">Person</rdfs:label>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:label xml:lang="fr">Personne</rdfs:label>
+        <rdfs:label xml:lang="pt">Pessoa</rdfs:label>
+        <rdfs:label xml:lang="el">Πρόσωπο</rdfs:label>
+        <rdfs:label xml:lang="ru">Личность</rdfs:label>
+        <rdfs:label xml:lang="zh">人物</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">
@@ -318,6 +327,44 @@ This class comprises man-made objects, such as a swords, and man-made features, 
         <rdfs:label xml:lang="el">Ανθρωπογενές Υλικό Πράγμα</rdfs:label>
         <rdfs:label xml:lang="ru">Физическая Рукотворная Вещь</rdfs:label>
         <rdfs:label xml:lang="zh">人造实体物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:comment>This class comprises non-material products of our minds and other human produced data that 		have become objects of a discourse about their identity, circumstances of creation or historical 		implication. The production of such information may have been supported by the use of    		technical devices such as cameras or computers.
+Characteristically, instances of this class are created, invented or thought by someone, and then may be documented or communicated between persons. Instances of E28 Conceptual Object have the ability to exist on more than one particular carrier at the same time, such as paper, electronic signals, marks, audio media, paintings, photos, human memories, etc.
+They cannot be destroyed. They exist as long as they can be found on at least one carrier or in at least one human memory. Their existence ends when the last carrier and the last memory are lost. 
+</rdfs:comment>
+        <rdfs:label xml:lang="de">Begrifflicher Gegenstand</rdfs:label>
+        <rdfs:label xml:lang="en">Conceptual Object</rdfs:label>
+        <rdfs:label xml:lang="fr">Objet conceptuel</rdfs:label>
+        <rdfs:label xml:lang="pt">Objeto Conceitual</rdfs:label>
+        <rdfs:label xml:lang="el">Νοητικό Αντικείμενο</rdfs:label>
+        <rdfs:label xml:lang="ru">Концептуальный Объект</rdfs:label>
+        <rdfs:label xml:lang="zh">概念物件</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E53_Place -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E53_Place">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment>This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter. 
+The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks. A Place can be determined by combining a frame of reference and a location with respect to this frame. It may be identified by one or more instances of E44 Place Appellation.
+ It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, we are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object – H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance.
+Any object can serve as a frame of reference for E53 Place determination. The model foresees the notion of a &quot;section&quot; of an E19 Physical Object as a valid E53 Place determination.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Lieu</rdfs:label>
+        <rdfs:label xml:lang="pt">Local</rdfs:label>
+        <rdfs:label xml:lang="de">Ort</rdfs:label>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+        <rdfs:label xml:lang="el">Τόπος</rdfs:label>
+        <rdfs:label xml:lang="ru">Место</rdfs:label>
+        <rdfs:label xml:lang="zh">地点</rdfs:label>
     </owl:Class>
     
 
@@ -428,7 +475,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
 
     <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.linkE53_Place"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
         <rdfs:label xml:lang="en">Spatial Object</rdfs:label>
     </owl:Class>
     
@@ -473,6 +520,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
         <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
@@ -494,6 +542,17 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q839954">
         <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Wikidata"/>
         <rdfs:label xml:lang="en">archaeological site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+        <rdfs:comment xml:lang="en">A person.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
     
 
