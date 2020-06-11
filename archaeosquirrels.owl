@@ -330,6 +330,15 @@
     
 
 
+    <!-- http://archaeoinformatics.link/ontology#POI -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#POI">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:label xml:lang="en">Point of Interest</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://archaeoinformatics.link/ontology#Road -->
 
     <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Road">
@@ -660,12 +669,92 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
+    <!-- http://archaeoinformatics.link/ontology#ItinerariumProvinciarumAntoniniAugusti -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#ItinerariumProvinciarumAntoniniAugusti">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#POI"/>
+        <rdfs:label xml:lang="de">Itinerarium provinciarum Antonini Augusti</rdfs:label>
+        <rdfs:label xml:lang="en">Itinerarium provinciarum Antonini Augusti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://archaeoinformatics.link/ontology#LegionaryCamp -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LegionaryCamp">
         <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
         <rdfs:label xml:lang="de">Legionslager</rdfs:label>
         <rdfs:label xml:lang="en">legionary camp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesDacicus -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesDacicus">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Limes Dacicus</rdfs:label>
+        <rdfs:label xml:lang="en">Limes Dacicus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesGermaniaInferior -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesGermaniaInferior">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Limes Germania Inferior</rdfs:label>
+        <rdfs:label xml:lang="en">Limes Germania Inferior</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesMidlandsWalesCornwall -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesMidlandsWalesCornwall">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="en">Limes Midlands, Wales and Cornwall</rdfs:label>
+        <rdfs:label xml:lang="de">Limes Midlands, Wales und Cornwall</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesMoesica -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesMoesica">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Limes Moesica</rdfs:label>
+        <rdfs:label xml:lang="en">Limes Moesica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesNoricum -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesNoricum">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Limes Noricum</rdfs:label>
+        <rdfs:label xml:lang="en">Limes Noricum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesPannoniaInferior -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesPannoniaInferior">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Limes Pannonia Inferior</rdfs:label>
+        <rdfs:label xml:lang="en">Limes Pannonia Inferior</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesPannoniaSuperior -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesPannoniaSuperior">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Limes Pannonia Superior</rdfs:label>
+        <rdfs:label xml:lang="en">Limes Pannonia Superior</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -686,6 +775,16 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Road"/>
         <rdfs:label xml:lang="en">Limes road</rdfs:label>
         <rdfs:label xml:lang="de">Limesstraße</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesUpperGermanicRhaetian -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesUpperGermanicRhaetian">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="en">Limes Upper Germanic Rhaetian</rdfs:label>
+        <rdfs:label xml:lang="de">Obergermanisch-Raetischer Limes</rdfs:label>
     </owl:NamedIndividual>
     
 
