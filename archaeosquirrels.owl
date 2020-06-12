@@ -293,6 +293,16 @@
     
 
 
+    <!-- http://archaeoinformatics.link/ontology#Burgus -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Burgus">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Burgus</rdfs:label>
+        <rdfs:label xml:lang="en">burgus</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://archaeoinformatics.link/ontology#ConstructionalFeature -->
 
     <owl:Class rdf:about="http://archaeoinformatics.link/ontology#ConstructionalFeature">
@@ -330,6 +340,56 @@
     
 
 
+    <!-- http://archaeoinformatics.link/ontology#ItinerariumProvinciarumAntoniniAugusti -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#ItinerariumProvinciarumAntoniniAugusti">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#POI"/>
+        <rdfs:label xml:lang="de">Itinerarium provinciarum Antonini Augusti</rdfs:label>
+        <rdfs:label xml:lang="en">Itinerarium provinciarum Antonini Augusti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LegionaryCamp -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#LegionaryCamp">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Legionslager</rdfs:label>
+        <rdfs:label xml:lang="en">legionary camp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#Limes -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Limes">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Limes</rdfs:label>
+        <rdfs:label xml:lang="en">Limes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#LimesPart -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#LimesPart">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+        <rdfs:label xml:lang="en">Limes part</rdfs:label>
+        <rdfs:label xml:lang="de">Limesabschnitt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#MilitaryCamp -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#MilitaryCamp">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Kastell</rdfs:label>
+        <rdfs:label xml:lang="en">military camp</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://archaeoinformatics.link/ontology#POI -->
 
     <owl:Class rdf:about="http://archaeoinformatics.link/ontology#POI">
@@ -344,6 +404,16 @@
     <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Road">
         <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#ConstructionalFeature"/>
         <rdfs:label xml:lang="en">Road</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#Watchtower -->
+
+    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Watchtower">
+        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdfs:label xml:lang="de">Wachturm</rdfs:label>
+        <rdfs:label xml:lang="en">watchtower</rdfs:label>
     </owl:Class>
     
 
@@ -659,40 +729,10 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#Burgus -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#Burgus">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
-        <rdfs:label xml:lang="de">Burgus</rdfs:label>
-        <rdfs:label xml:lang="en">burgus</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link/ontology#ItinerariumProvinciarumAntoniniAugusti -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#ItinerariumProvinciarumAntoniniAugusti">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#POI"/>
-        <rdfs:label xml:lang="de">Itinerarium provinciarum Antonini Augusti</rdfs:label>
-        <rdfs:label xml:lang="en">Itinerarium provinciarum Antonini Augusti</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link/ontology#LegionaryCamp -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LegionaryCamp">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
-        <rdfs:label xml:lang="de">Legionslager</rdfs:label>
-        <rdfs:label xml:lang="en">legionary camp</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://archaeoinformatics.link/ontology#LimesDacicus -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesDacicus">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Dacicus</rdfs:label>
         <rdfs:label xml:lang="en">Limes Dacicus</rdfs:label>
     </owl:NamedIndividual>
@@ -702,7 +742,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://archaeoinformatics.link/ontology#LimesGermaniaInferior -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesGermaniaInferior">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Germania Inferior</rdfs:label>
         <rdfs:label xml:lang="en">Limes Germania Inferior</rdfs:label>
     </owl:NamedIndividual>
@@ -712,7 +752,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://archaeoinformatics.link/ontology#LimesMidlandsWalesCornwall -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesMidlandsWalesCornwall">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
         <rdfs:label xml:lang="en">Limes Midlands, Wales and Cornwall</rdfs:label>
         <rdfs:label xml:lang="de">Limes Midlands, Wales und Cornwall</rdfs:label>
     </owl:NamedIndividual>
@@ -722,7 +762,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://archaeoinformatics.link/ontology#LimesMoesica -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesMoesica">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Moesica</rdfs:label>
         <rdfs:label xml:lang="en">Limes Moesica</rdfs:label>
     </owl:NamedIndividual>
@@ -732,7 +772,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://archaeoinformatics.link/ontology#LimesNoricum -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesNoricum">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Noricum</rdfs:label>
         <rdfs:label xml:lang="en">Limes Noricum</rdfs:label>
     </owl:NamedIndividual>
@@ -742,7 +782,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://archaeoinformatics.link/ontology#LimesPannoniaInferior -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesPannoniaInferior">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Pannonia Inferior</rdfs:label>
         <rdfs:label xml:lang="en">Limes Pannonia Inferior</rdfs:label>
     </owl:NamedIndividual>
@@ -752,19 +792,9 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://archaeoinformatics.link/ontology#LimesPannoniaSuperior -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesPannoniaSuperior">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Pannonia Superior</rdfs:label>
         <rdfs:label xml:lang="en">Limes Pannonia Superior</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link/ontology#LimesPart -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesPart">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
-        <rdfs:label xml:lang="de">Limesabschnitt</rdfs:label>
-        <rdfs:label xml:lang="en">limes part</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -782,19 +812,9 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://archaeoinformatics.link/ontology#LimesUpperGermanicRhaetian -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesUpperGermanicRhaetian">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
         <rdfs:label xml:lang="en">Limes Upper Germanic Rhaetian</rdfs:label>
         <rdfs:label xml:lang="de">Obergermanisch-Raetischer Limes</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link/ontology#MilitaryCamp -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#MilitaryCamp">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
-        <rdfs:label xml:lang="de">Kastell</rdfs:label>
-        <rdfs:label xml:lang="en">military camp</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -806,16 +826,6 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdf:type rdf:resource="http://www.wikidata.org/entity/Q194029"/>
         <rdfs:label xml:lang="en">Roman road</rdfs:label>
         <rdfs:label xml:lang="de">römische Straße</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://archaeoinformatics.link/ontology#Watchtower -->
-
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#Watchtower">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
-        <rdfs:label xml:lang="de">Wachturm</rdfs:label>
-        <rdfs:label xml:lang="en">watchtower</rdfs:label>
     </owl:NamedIndividual>
     
 
