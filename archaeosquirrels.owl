@@ -729,6 +729,30 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
+    <!-- http://archaeoinformatics.link/ontology#AntonineItinerary -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#AntonineItinerary">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Dataset"/>
+        <dc:rights xml:lang="en">Copyright 2013 roman-britain.org</dc:rights>
+        <rdfs:label xml:lang="de">Itinerarium Provinciarum Antonini Augusti</rdfs:label>
+        <rdfs:label xml:lang="en">Itinerarium Provinciarum Antonini Augusti</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://web.archive.org/web/20131216035218/http://www.roman-britain.org/antonine-itinerary-map.htm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#DeutscheLimeskommission -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#DeutscheLimeskommission">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Dataset"/>
+        <dc:rights xml:lang="en">Copyright 2020 Deutsche Limeskommission</dc:rights>
+        <rdfs:label xml:lang="de">Deutsche Limeskommission</rdfs:label>
+        <rdfs:label xml:lang="en">German Limeskommission</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.deutsche-limeskommission.de/index.php?id=23"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://archaeoinformatics.link/ontology#LimesDacicus -->
 
     <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesDacicus">
@@ -826,6 +850,18 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdf:type rdf:resource="http://www.wikidata.org/entity/Q194029"/>
         <rdfs:label xml:lang="en">Roman road</rdfs:label>
         <rdfs:label xml:lang="de">römische Straße</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://archaeoinformatics.link/ontology#WMDE-RENDER -->
+
+    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#WMDE-RENDER">
+        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Dataset"/>
+        <dc:rights xml:lang="en">Copyright 2013 WMDE-RENDER</dc:rights>
+        <rdfs:label xml:lang="de">Limeskarte DAI/WIKIPEDIA-LIMESPROJEKT/WIKIDATA/WMDE-RENDER</rdfs:label>
+        <rdfs:label xml:lang="en">Limesmap DAI/WIKIPEDIA-LIMESPROJEKT/WIKIDATA/WMDE-RENDER</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://docs.google.com/spreadsheets/d/1SHD79Ko275BrigRa-cEcLyJ1lXE7GHQOvrX4E2px6Ec"/>
     </owl:NamedIndividual>
     
 
