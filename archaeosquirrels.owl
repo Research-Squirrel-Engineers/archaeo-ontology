@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://archaeoinformatics.link#"
-     xml:base="http://archaeoinformatics.link"
+<rdf:RDF xmlns="http://onto.squirrel.link#"
+     xml:base="http://onto.squirrel.link"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sf="http://www.opengis.net/ont/sf#"
      xmlns:wd="http://www.wikidata.org/entity/"
@@ -13,13 +13,13 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:epsg="http://www.opengis.net/def/crs/EPSG/0/"
      xmlns:fort="http://hadrianswall.squirrel.link/fort#"
-     xmlns:lado="http://archaeoinformatics.link#"
+     xmlns:lado="http://onto.squirrel.link#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcmit="http://purl.org/dc/terms/DCMIType/"
      xmlns:semgis="http://semgis.de/geodata#"
      xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
-    <owl:Ontology rdf:about="http://archaeoinformatics.link/ontology#">
+    <owl:Ontology rdf:about="http://onto.squirrel.link/ontology#">
         <dc:contributor>Florian Thiery</dc:contributor>
         <dc:creator>Florian Thiery</dc:creator>
         <dc:description xml:lang="en">This ontology contains classes to descibe research squirrel&apos;s archaeological items.</dc:description>
@@ -145,9 +145,9 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#hasType -->
+    <!-- http://onto.squirrel.link/ontology#hasType -->
 
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link/ontology#hasType">
+    <owl:ObjectProperty rdf:about="http://onto.squirrel.link/ontology#hasType">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">has type</rdfs:label>
@@ -155,19 +155,19 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#hasWikidataQID -->
+    <!-- http://onto.squirrel.link/ontology#hasWikidataQID -->
 
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link/ontology#hasWikidataQID">
+    <owl:ObjectProperty rdf:about="http://onto.squirrel.link/ontology#hasWikidataQID">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:range rdf:resource="http://archaeoinformatics.link/ontology#Wikidata"/>
+        <rdfs:range rdf:resource="http://onto.squirrel.link/ontology#Wikidata"/>
         <rdfs:label xml:lang="en">has Wikidata QID</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#romanName -->
+    <!-- http://onto.squirrel.link/ontology#romanName -->
 
-    <owl:ObjectProperty rdf:about="http://archaeoinformatics.link/ontology#romanName">
+    <owl:ObjectProperty rdf:about="http://onto.squirrel.link/ontology#romanName">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:ObjectProperty>
@@ -195,10 +195,10 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#groupID -->
+    <!-- http://onto.squirrel.link/ontology#groupID -->
 
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link/ontology#groupID">
-        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link/ontology#name"/>
+    <owl:DatatypeProperty rdf:about="http://onto.squirrel.link/ontology#groupID">
+        <rdfs:subPropertyOf rdf:resource="http://onto.squirrel.link/ontology#name"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">group ID</rdfs:label>
@@ -206,9 +206,9 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#hasID -->
+    <!-- http://onto.squirrel.link/ontology#hasID -->
 
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link/ontology#hasID">
+    <owl:DatatypeProperty rdf:about="http://onto.squirrel.link/ontology#hasID">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">has ID</rdfs:label>
@@ -216,9 +216,9 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#name -->
+    <!-- http://onto.squirrel.link/ontology#name -->
 
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link/ontology#name">
+    <owl:DatatypeProperty rdf:about="http://onto.squirrel.link/ontology#name">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">name</rdfs:label>
@@ -226,9 +226,9 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#relatedToLocation -->
+    <!-- http://onto.squirrel.link/ontology#relatedToLocation -->
 
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link/ontology#relatedToLocation">
+    <owl:DatatypeProperty rdf:about="http://onto.squirrel.link/ontology#relatedToLocation">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">related to location</rdfs:label>
@@ -236,10 +236,10 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#relatedToLocationPart -->
+    <!-- http://onto.squirrel.link/ontology#relatedToLocationPart -->
 
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link/ontology#relatedToLocationPart">
-        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link/ontology#relatedToLocation"/>
+    <owl:DatatypeProperty rdf:about="http://onto.squirrel.link/ontology#relatedToLocationPart">
+        <rdfs:subPropertyOf rdf:resource="http://onto.squirrel.link/ontology#relatedToLocation"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">related to location part</rdfs:label>
@@ -247,10 +247,10 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#romanName -->
+    <!-- http://onto.squirrel.link/ontology#romanName -->
 
-    <owl:DatatypeProperty rdf:about="http://archaeoinformatics.link/ontology#romanName">
-        <rdfs:subPropertyOf rdf:resource="http://archaeoinformatics.link/ontology#name"/>
+    <owl:DatatypeProperty rdf:about="http://onto.squirrel.link/ontology#romanName">
+        <rdfs:subPropertyOf rdf:resource="http://onto.squirrel.link/ontology#name"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -283,9 +283,9 @@
     
 
 
-    <!-- http://archaeoinformatics.link#Database -->
+    <!-- http://onto.squirrel.link#Database -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link#Database">
+    <owl:Class rdf:about="http://onto.squirrel.link#Database">
         <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object"/>
         <rdfs:label xml:lang="en">Database</rdfs:label>
         <rdfs:label xml:lang="de">Datenbank</rdfs:label>
@@ -293,46 +293,46 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#Burgus -->
+    <!-- http://onto.squirrel.link/ontology#Burgus -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Burgus">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#Burgus">
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Fortification"/>
         <rdfs:label xml:lang="de">Burgus</rdfs:label>
         <rdfs:label xml:lang="en">burgus</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#ConstructionalFeature -->
+    <!-- http://onto.squirrel.link/ontology#ConstructionalFeature -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#ConstructionalFeature">
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#ConstructionalFeature">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:label xml:lang="en">Constructional Feature</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#Dataset -->
+    <!-- http://onto.squirrel.link/ontology#Dataset -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Dataset">
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#Dataset">
         <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#Fortification -->
+    <!-- http://onto.squirrel.link/ontology#Fortification -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Fortification">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#ConstructionalFeature"/>
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#Fortification">
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#ConstructionalFeature"/>
         <rdfs:label xml:lang="en">Fortification</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#HistoricPerson -->
+    <!-- http://onto.squirrel.link/ontology#HistoricPerson -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#HistoricPerson">
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#HistoricPerson">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:label xml:lang="en">historic person</rdfs:label>
         <rdfs:label xml:lang="de">historische Person</rdfs:label>
@@ -340,87 +340,87 @@
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#ItinerariumProvinciarumAntoniniAugusti -->
+    <!-- http://onto.squirrel.link/ontology#ItinerariumProvinciarumAntoniniAugusti -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#ItinerariumProvinciarumAntoniniAugusti">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#POI"/>
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#ItinerariumProvinciarumAntoniniAugusti">
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#POI"/>
         <rdfs:label xml:lang="de">Itinerarium provinciarum Antonini Augusti</rdfs:label>
         <rdfs:label xml:lang="en">Itinerarium provinciarum Antonini Augusti</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LegionaryCamp -->
+    <!-- http://onto.squirrel.link/ontology#LegionaryCamp -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#LegionaryCamp">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#LegionaryCamp">
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Fortification"/>
         <rdfs:label xml:lang="de">Legionslager</rdfs:label>
         <rdfs:label xml:lang="en">legionary camp</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#Limes -->
+    <!-- http://onto.squirrel.link/ontology#Limes -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Limes">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#Limes">
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Fortification"/>
         <rdfs:label xml:lang="de">Limes</rdfs:label>
         <rdfs:label xml:lang="en">Limes</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesPart -->
+    <!-- http://onto.squirrel.link/ontology#LimesPart -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#LimesPart">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#LimesPart">
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Limes"/>
         <rdfs:label xml:lang="en">Limes part</rdfs:label>
         <rdfs:label xml:lang="de">Limesabschnitt</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#MilitaryCamp -->
+    <!-- http://onto.squirrel.link/ontology#MilitaryCamp -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#MilitaryCamp">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#MilitaryCamp">
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Fortification"/>
         <rdfs:label xml:lang="de">Kastell</rdfs:label>
         <rdfs:label xml:lang="en">military camp</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#POI -->
+    <!-- http://onto.squirrel.link/ontology#POI -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#POI">
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#POI">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:label xml:lang="en">Point of Interest</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#Road -->
+    <!-- http://onto.squirrel.link/ontology#Road -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Road">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#ConstructionalFeature"/>
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#Road">
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#ConstructionalFeature"/>
         <rdfs:label xml:lang="en">Road</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#Watchtower -->
+    <!-- http://onto.squirrel.link/ontology#Watchtower -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Watchtower">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Fortification"/>
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#Watchtower">
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Fortification"/>
         <rdfs:label xml:lang="de">Wachturm</rdfs:label>
         <rdfs:label xml:lang="en">watchtower</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#Wikidata -->
+    <!-- http://onto.squirrel.link/ontology#Wikidata -->
 
-    <owl:Class rdf:about="http://archaeoinformatics.link/ontology#Wikidata">
+    <owl:Class rdf:about="http://onto.squirrel.link/ontology#Wikidata">
         <rdfs:label xml:lang="en">Wikidata</rdfs:label>
     </owl:Class>
     
@@ -692,7 +692,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://www.wikidata.org/entity/Q194029 -->
 
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q194029">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Wikidata"/>
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Wikidata"/>
         <rdfs:label xml:lang="en">roman road</rdfs:label>
     </owl:Class>
     
@@ -701,7 +701,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     <!-- http://www.wikidata.org/entity/Q839954 -->
 
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q839954">
-        <rdfs:subClassOf rdf:resource="http://archaeoinformatics.link/ontology#Wikidata"/>
+        <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Wikidata"/>
         <rdfs:label xml:lang="en">archaeological site</rdfs:label>
     </owl:Class>
     
@@ -729,10 +729,10 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#AntonineItinerary -->
+    <!-- http://onto.squirrel.link/ontology#AntonineItinerary -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#AntonineItinerary">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Dataset"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#AntonineItinerary">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Dataset"/>
         <dc:rights xml:lang="en">Copyright 2013 roman-britain.org</dc:rights>
         <rdfs:label xml:lang="de">Itinerarium Provinciarum Antonini Augusti</rdfs:label>
         <rdfs:label xml:lang="en">Itinerarium Provinciarum Antonini Augusti</rdfs:label>
@@ -741,10 +741,10 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#DeutscheLimeskommission -->
+    <!-- http://onto.squirrel.link/ontology#DeutscheLimeskommission -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#DeutscheLimeskommission">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Dataset"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#DeutscheLimeskommission">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Dataset"/>
         <dc:rights xml:lang="en">Copyright 2020 Deutsche Limeskommission</dc:rights>
         <rdfs:label xml:lang="de">Deutsche Limeskommission</rdfs:label>
         <rdfs:label xml:lang="en">German Limeskommission</rdfs:label>
@@ -753,100 +753,100 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesDacicus -->
+    <!-- http://onto.squirrel.link/ontology#LimesDacicus -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesDacicus">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#LimesDacicus">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Dacicus</rdfs:label>
         <rdfs:label xml:lang="en">Limes Dacicus</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesGermaniaInferior -->
+    <!-- http://onto.squirrel.link/ontology#LimesGermaniaInferior -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesGermaniaInferior">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#LimesGermaniaInferior">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Germania Inferior</rdfs:label>
         <rdfs:label xml:lang="en">Limes Germania Inferior</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesMidlandsWalesCornwall -->
+    <!-- http://onto.squirrel.link/ontology#LimesMidlandsWalesCornwall -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesMidlandsWalesCornwall">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#LimesMidlandsWalesCornwall">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Limes"/>
         <rdfs:label xml:lang="en">Limes Midlands, Wales and Cornwall</rdfs:label>
         <rdfs:label xml:lang="de">Limes Midlands, Wales und Cornwall</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesMoesica -->
+    <!-- http://onto.squirrel.link/ontology#LimesMoesica -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesMoesica">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#LimesMoesica">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Moesica</rdfs:label>
         <rdfs:label xml:lang="en">Limes Moesica</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesNoricum -->
+    <!-- http://onto.squirrel.link/ontology#LimesNoricum -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesNoricum">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#LimesNoricum">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Noricum</rdfs:label>
         <rdfs:label xml:lang="en">Limes Noricum</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesPannoniaInferior -->
+    <!-- http://onto.squirrel.link/ontology#LimesPannoniaInferior -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesPannoniaInferior">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#LimesPannoniaInferior">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Pannonia Inferior</rdfs:label>
         <rdfs:label xml:lang="en">Limes Pannonia Inferior</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesPannoniaSuperior -->
+    <!-- http://onto.squirrel.link/ontology#LimesPannoniaSuperior -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesPannoniaSuperior">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#LimesPannoniaSuperior">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Limes"/>
         <rdfs:label xml:lang="de">Limes Pannonia Superior</rdfs:label>
         <rdfs:label xml:lang="en">Limes Pannonia Superior</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesRoad -->
+    <!-- http://onto.squirrel.link/ontology#LimesRoad -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesRoad">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Road"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#LimesRoad">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Road"/>
         <rdfs:label xml:lang="en">Limes road</rdfs:label>
         <rdfs:label xml:lang="de">Limesstraße</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#LimesUpperGermanicRhaetian -->
+    <!-- http://onto.squirrel.link/ontology#LimesUpperGermanicRhaetian -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#LimesUpperGermanicRhaetian">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Limes"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#LimesUpperGermanicRhaetian">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Limes"/>
         <rdfs:label xml:lang="en">Limes Upper Germanic Rhaetian</rdfs:label>
         <rdfs:label xml:lang="de">Obergermanisch-Raetischer Limes</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#RomanRoad -->
+    <!-- http://onto.squirrel.link/ontology#RomanRoad -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#RomanRoad">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Road"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#RomanRoad">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Road"/>
         <rdf:type rdf:resource="http://www.wikidata.org/entity/Q194029"/>
         <rdfs:label xml:lang="en">Roman road</rdfs:label>
         <rdfs:label xml:lang="de">römische Straße</rdfs:label>
@@ -854,10 +854,10 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     
 
 
-    <!-- http://archaeoinformatics.link/ontology#WMDE-RENDER -->
+    <!-- http://onto.squirrel.link/ontology#WMDE-RENDER -->
 
-    <owl:NamedIndividual rdf:about="http://archaeoinformatics.link/ontology#WMDE-RENDER">
-        <rdf:type rdf:resource="http://archaeoinformatics.link/ontology#Dataset"/>
+    <owl:NamedIndividual rdf:about="http://onto.squirrel.link/ontology#WMDE-RENDER">
+        <rdf:type rdf:resource="http://onto.squirrel.link/ontology#Dataset"/>
         <dc:rights xml:lang="en">Copyright 2013 WMDE-RENDER</dc:rights>
         <rdfs:label xml:lang="de">Limeskarte DAI/WIKIPEDIA-LIMESPROJEKT/WIKIDATA/WMDE-RENDER</rdfs:label>
         <rdfs:label xml:lang="en">Limesmap DAI/WIKIPEDIA-LIMESPROJEKT/WIKIDATA/WMDE-RENDER</rdfs:label>
@@ -874,7 +874,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://archaeoinformatics.link/ontology#romanName">
+    <rdf:Description rdf:about="http://onto.squirrel.link/ontology#romanName">
         <rdfs:label xml:lang="en">roman name</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
