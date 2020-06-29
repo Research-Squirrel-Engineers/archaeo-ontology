@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://onto.squirrel.link#"
-     xml:base="http://onto.squirrel.link"
+<rdf:RDF xmlns="http://onto.squirrel.link/ontology#"
+     xml:base="http://onto.squirrel.link/ontology#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sf="http://www.opengis.net/ont/sf#"
      xmlns:wd="http://www.wikidata.org/entity/"
@@ -30,10 +30,10 @@
         <rdfs:label xml:lang="en">The ArchaeoSquirrel Ontology</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -41,43 +41,43 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
@@ -89,7 +89,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
@@ -104,10 +104,10 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:AnnotationProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -115,7 +115,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/dcmitype/Image -->
@@ -125,16 +125,16 @@
         <rdfs:label xml:lang="en">Image</rdfs:label>
         <skos:definition xml:lang="en">A visual representation other than text.</skos:definition>
     </rdfs:Datatype>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -142,7 +142,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#hasType -->
@@ -152,7 +152,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">has type</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#hasWikidataQID -->
@@ -162,7 +162,7 @@
         <rdfs:range rdf:resource="http://onto.squirrel.link/ontology#Wikidata"/>
         <rdfs:label xml:lang="en">has Wikidata QID</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#romanName -->
@@ -171,7 +171,7 @@
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
@@ -181,10 +181,10 @@
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">has geometry</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -192,7 +192,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#groupID -->
@@ -203,7 +203,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">group ID</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#hasID -->
@@ -213,7 +213,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">has ID</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#name -->
@@ -223,7 +223,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">name</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#relatedToLocation -->
@@ -233,7 +233,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">related to location</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#relatedToLocationPart -->
@@ -244,7 +244,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">related to location part</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#romanName -->
@@ -253,7 +253,7 @@
         <rdfs:subPropertyOf rdf:resource="http://onto.squirrel.link/ontology#name"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#asGeoJSON -->
@@ -261,7 +261,7 @@
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#asGeoJSON">
         <rdfs:label xml:lang="en">as GeoJSON</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#asWKT -->
@@ -269,10 +269,10 @@
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#asWKT">
         <rdfs:label xml:lang="en">as well-known-text</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -280,7 +280,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://onto.squirrel.link#Database -->
@@ -290,7 +290,7 @@
         <rdfs:label xml:lang="en">Database</rdfs:label>
         <rdfs:label xml:lang="de">Datenbank</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#Burgus -->
@@ -300,7 +300,7 @@
         <rdfs:label xml:lang="de">Burgus</rdfs:label>
         <rdfs:label xml:lang="en">burgus</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#ConstructionalFeature -->
@@ -309,7 +309,7 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:label xml:lang="en">Constructional Feature</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#Dataset -->
@@ -318,7 +318,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object"/>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#Fortification -->
@@ -327,7 +327,7 @@
         <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#ConstructionalFeature"/>
         <rdfs:label xml:lang="en">Fortification</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#HistoricPerson -->
@@ -337,7 +337,7 @@
         <rdfs:label xml:lang="en">historic person</rdfs:label>
         <rdfs:label xml:lang="de">historische Person</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#ItinerariumProvinciarumAntoniniAugusti -->
@@ -347,7 +347,7 @@
         <rdfs:label xml:lang="de">Itinerarium provinciarum Antonini Augusti</rdfs:label>
         <rdfs:label xml:lang="en">Itinerarium provinciarum Antonini Augusti</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LegionaryCamp -->
@@ -357,7 +357,7 @@
         <rdfs:label xml:lang="de">Legionslager</rdfs:label>
         <rdfs:label xml:lang="en">legionary camp</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#Limes -->
@@ -367,7 +367,7 @@
         <rdfs:label xml:lang="de">Limes</rdfs:label>
         <rdfs:label xml:lang="en">Limes</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesPart -->
@@ -377,7 +377,7 @@
         <rdfs:label xml:lang="en">Limes part</rdfs:label>
         <rdfs:label xml:lang="de">Limesabschnitt</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#MilitaryCamp -->
@@ -387,7 +387,7 @@
         <rdfs:label xml:lang="de">Kastell</rdfs:label>
         <rdfs:label xml:lang="en">military camp</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#POI -->
@@ -396,7 +396,7 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:label xml:lang="en">Point of Interest</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#Road -->
@@ -405,7 +405,7 @@
         <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#ConstructionalFeature"/>
         <rdfs:label xml:lang="en">Road</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#Watchtower -->
@@ -415,7 +415,7 @@
         <rdfs:label xml:lang="de">Wachturm</rdfs:label>
         <rdfs:label xml:lang="en">watchtower</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#Wikidata -->
@@ -423,18 +423,18 @@
     <owl:Class rdf:about="http://onto.squirrel.link/ontology#Wikidata">
         <rdfs:label xml:lang="en">Wikidata</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
-        <rdfs:comment>This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. 
+        <rdfs:comment>This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model.
 It is an abstract concept providing for three general properties:
 1.	Identification by name or appellation, and in particular by a preferred identifier
-2.	Classification by type, allowing further refinement of the specific subclass an instance belongs to 
+2.	Classification by type, allowing further refinement of the specific subclass an instance belongs to
 3.	Attachment of free text for the expression of anything not captured by formal properties
-With the exception of E59 Primitive Value, all other classes within the CRM are directly or indirectly specialisations of E1 CRM Entity. 
+With the exception of E59 Primitive Value, all other classes within the CRM are directly or indirectly specialisations of E1 CRM Entity.
 </rdfs:comment>
         <rdfs:label xml:lang="en">CRM Entity</rdfs:label>
         <rdfs:label xml:lang="de">CRM Entität</rdfs:label>
@@ -444,14 +444,14 @@ With the exception of E59 Primitive Value, all other classes within the CRM are 
         <rdfs:label xml:lang="fr">Entité CRM</rdfs:label>
         <rdfs:label xml:lang="el">Οντότητα CIDOC CRM</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E21_Person -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E21_Person">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:comment>This class comprises real persons who live or are assumed to have lived. 
+        <rdfs:comment>This class comprises real persons who live or are assumed to have lived.
 Legendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CRM does not propose a specific form to support reasoning about possible identity.
 </rdfs:comment>
         <rdfs:label xml:lang="de">Person</rdfs:label>
@@ -462,7 +462,7 @@ Legendary figures that may have existed, such as Ulysses and King Arthur, fall i
         <rdfs:label xml:lang="ru">Личность</rdfs:label>
         <rdfs:label xml:lang="zh">人物</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing -->
@@ -470,7 +470,7 @@ Legendary figures that may have existed, such as Ulysses and King Arthur, fall i
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
         <rdfs:comment>This class comprises all persistent physical items that are purposely created by human activity.
-This class comprises man-made objects, such as a swords, and man-made features, such as rock art. No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Man-Made Thing. 
+This class comprises man-made objects, such as a swords, and man-made features, such as rock art. No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Man-Made Thing.
 </rdfs:comment>
         <rdfs:label xml:lang="fr">Chose matérielle fabriquée</rdfs:label>
         <rdfs:label xml:lang="pt">Coisa Material Fabricada</rdfs:label>
@@ -480,7 +480,7 @@ This class comprises man-made objects, such as a swords, and man-made features, 
         <rdfs:label xml:lang="ru">Физическая Рукотворная Вещь</rdfs:label>
         <rdfs:label xml:lang="zh">人造实体物</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object -->
@@ -489,7 +489,7 @@ This class comprises man-made objects, such as a swords, and man-made features, 
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
         <rdfs:comment>This class comprises non-material products of our minds and other human produced data that 		have become objects of a discourse about their identity, circumstances of creation or historical 		implication. The production of such information may have been supported by the use of    		technical devices such as cameras or computers.
 Characteristically, instances of this class are created, invented or thought by someone, and then may be documented or communicated between persons. Instances of E28 Conceptual Object have the ability to exist on more than one particular carrier at the same time, such as paper, electronic signals, marks, audio media, paintings, photos, human memories, etc.
-They cannot be destroyed. They exist as long as they can be found on at least one carrier or in at least one human memory. Their existence ends when the last carrier and the last memory are lost. 
+They cannot be destroyed. They exist as long as they can be found on at least one carrier or in at least one human memory. Their existence ends when the last carrier and the last memory are lost.
 </rdfs:comment>
         <rdfs:label xml:lang="de">Begrifflicher Gegenstand</rdfs:label>
         <rdfs:label xml:lang="en">Conceptual Object</rdfs:label>
@@ -499,14 +499,14 @@ They cannot be destroyed. They exist as long as they can be found on at least on
         <rdfs:label xml:lang="ru">Концептуальный Объект</rdfs:label>
         <rdfs:label xml:lang="zh">概念物件</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E53_Place -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E53_Place">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:comment>This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter. 
+        <rdfs:comment>This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter.
 The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks. A Place can be determined by combining a frame of reference and a location with respect to this frame. It may be identified by one or more instances of E44 Place Appellation.
  It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, we are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object – H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance.
 Any object can serve as a frame of reference for E53 Place determination. The model foresees the notion of a &quot;section&quot; of an E19 Physical Object as a valid E53 Place determination.</rdfs:comment>
@@ -518,15 +518,15 @@ Any object can serve as a frame of reference for E53 Place determination. The mo
         <rdfs:label xml:lang="ru">Место</rdfs:label>
         <rdfs:label xml:lang="zh">地点</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:comment>This class comprises concepts denoted by terms from thesauri and controlled vocabularies used to characterize and classify instances of CRM classes. Instances of E55 Type represent concepts  in contrast to instances of E41 Appellation which are used to name instances of CRM classes. 
-E55 Type is the CRM’s interface to domain specific ontologies and thesauri. These can be represented in the CRM as subclasses of E55 Type, forming hierarchies of terms, i.e. instances of E55 Type linked via P127 has broader  term (has narrower term). Such hierarchies may be extended with additional properties. 
+        <rdfs:comment>This class comprises concepts denoted by terms from thesauri and controlled vocabularies used to characterize and classify instances of CRM classes. Instances of E55 Type represent concepts  in contrast to instances of E41 Appellation which are used to name instances of CRM classes.
+E55 Type is the CRM’s interface to domain specific ontologies and thesauri. These can be represented in the CRM as subclasses of E55 Type, forming hierarchies of terms, i.e. instances of E55 Type linked via P127 has broader  term (has narrower term). Such hierarchies may be extended with additional properties.
 </rdfs:comment>
         <rdfs:label xml:lang="pt">Tipo</rdfs:label>
         <rdfs:label xml:lang="en">Type</rdfs:label>
@@ -536,7 +536,7 @@ E55 Type is the CRM’s interface to domain specific ontologies and thesauri. Th
         <rdfs:label xml:lang="ru">Тип</rdfs:label>
         <rdfs:label xml:lang="zh">类型</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E70_Thing -->
@@ -554,16 +554,16 @@ They may be intellectual products or physical things. They may for instance have
         <rdfs:label xml:lang="el">Πράγμα</rdfs:label>
         <rdfs:label xml:lang="zh">万物</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
-        <rdfs:comment>This class comprises identifiable immaterial items, such as a poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units. The encoding structure known as a &quot;named graph&quot; also falls under this class, so that each &quot;named graph&quot; is an instance of an E73 Information Object. 
-An E73 Information Object does not depend on a specific physical carrier, which can include human memory, and it can exist on one or more carriers simultaneously. 
-Instances of E73 Information Object of a linguistic nature should be declared as instances of the E33 Linguistic Object subclass. Instances of E73 Information Object of a documentary nature should be declared as instances of the E31 Document subclass. Conceptual items such as types and classes are not instances of E73 Information Object, nor are ideas without a reproducible expression. 
+        <rdfs:comment>This class comprises identifiable immaterial items, such as a poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units. The encoding structure known as a &quot;named graph&quot; also falls under this class, so that each &quot;named graph&quot; is an instance of an E73 Information Object.
+An E73 Information Object does not depend on a specific physical carrier, which can include human memory, and it can exist on one or more carriers simultaneously.
+Instances of E73 Information Object of a linguistic nature should be declared as instances of the E33 Linguistic Object subclass. Instances of E73 Information Object of a documentary nature should be declared as instances of the E31 Document subclass. Conceptual items such as types and classes are not instances of E73 Information Object, nor are ideas without a reproducible expression.
  </rdfs:comment>
         <rdfs:label xml:lang="en">Information Object</rdfs:label>
         <rdfs:label xml:lang="de">Informationsgegenstand</rdfs:label>
@@ -573,37 +573,37 @@ Instances of E73 Information Object of a linguistic nature should be declared as
         <rdfs:label xml:lang="ru">Информационный Объект</rdfs:label>
         <rdfs:label xml:lang="zh">信息物件</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object -->
 
     <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
-        <rdfs:comment>This class comprises identifiable immaterial items that can be represented as sets of bit sequences, 
-	such as data sets, e-texts, images, audio or video items, software, etc., and are documented as single units. 
-	Any aggregation of instances of D1 Digital Object into a whole treated as single unit is also regarded as an instance of D1 Digital Object. 
-	This means that for instance, the content of a DVD, an XML file on it, and an element of this file, are regarded as distinct instances of 
+        <rdfs:comment>This class comprises identifiable immaterial items that can be represented as sets of bit sequences,
+	such as data sets, e-texts, images, audio or video items, software, etc., and are documented as single units.
+	Any aggregation of instances of D1 Digital Object into a whole treated as single unit is also regarded as an instance of D1 Digital Object.
+	This means that for instance, the content of a DVD, an XML file on it, and an element of this file, are regarded as distinct instances of
 	D1 Digital Object, mutually related by the P106 is composed of (forms part of) property.
 A D1 Digital Object does not depend on a specific physical carrier, and it can exist on one or more carriers simultaneously.
 </rdfs:comment>
         <rdfs:label xml:lang="en">Digital Object</rdfs:label>
         <rdfs:label xml:lang="de">Digitales Objekt</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object -->
 
     <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object">
         <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object"/>
-        <rdfs:comment>This class comprises instances of D1 Digital Object that are the direct result of a digital 
+        <rdfs:comment>This class comprises instances of D1 Digital Object that are the direct result of a digital
 	measurement or a formal derivative of it, containing quantitative properties of some physical things or other constellations of matter.
 	</rdfs:comment>
         <rdfs:label xml:lang="en">Data Object</rdfs:label>
         <rdfs:label xml:lang="de">Datenobjekt</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#Feature -->
@@ -612,7 +612,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
         <rdfs:label xml:lang="en">Feature</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#Geometry -->
@@ -621,7 +621,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
         <rdfs:label xml:lang="en">Geometry</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
@@ -630,7 +630,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
         <rdfs:label xml:lang="en">Spatial Object</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#MultiLineString -->
@@ -639,7 +639,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
         <rdfs:label xml:lang="en">Multi Line</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#MultiPoint -->
@@ -648,7 +648,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
         <rdfs:label xml:lang="en">Mulit Point</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#MultiPolygon -->
@@ -657,7 +657,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
         <rdfs:label xml:lang="en">Multi Polygon</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.opengis.net/ont/sf#Point -->
@@ -666,7 +666,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
         <rdfs:label xml:lang="en">Point</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2002/07/owl#Thing -->
@@ -675,7 +675,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="de">OWL Thing</rdfs:label>
         <rdfs:label xml:lang="en">OWL Thing</rdfs:label>
     </rdf:Description>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
@@ -686,7 +686,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.wikidata.org/entity/Q194029 -->
@@ -695,7 +695,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Wikidata"/>
         <rdfs:label xml:lang="en">roman road</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.wikidata.org/entity/Q839954 -->
@@ -704,7 +704,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:subClassOf rdf:resource="http://onto.squirrel.link/ontology#Wikidata"/>
         <rdfs:label xml:lang="en">archaeological site</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
@@ -715,10 +715,10 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -726,7 +726,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#AntonineItinerary -->
@@ -738,7 +738,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="en">Itinerarium Provinciarum Antonini Augusti</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://web.archive.org/web/20131216035218/http://www.roman-britain.org/antonine-itinerary-map.htm"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#DeutscheLimeskommission -->
@@ -750,7 +750,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="en">German Limeskommission</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.deutsche-limeskommission.de/index.php?id=23"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesDacicus -->
@@ -760,7 +760,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="de">Limes Dacicus</rdfs:label>
         <rdfs:label xml:lang="en">Limes Dacicus</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesGermaniaInferior -->
@@ -770,7 +770,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="de">Limes Germania Inferior</rdfs:label>
         <rdfs:label xml:lang="en">Limes Germania Inferior</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesMidlandsWalesCornwall -->
@@ -780,7 +780,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="en">Limes Midlands, Wales and Cornwall</rdfs:label>
         <rdfs:label xml:lang="de">Limes Midlands, Wales und Cornwall</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesMoesica -->
@@ -790,7 +790,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="de">Limes Moesica</rdfs:label>
         <rdfs:label xml:lang="en">Limes Moesica</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesNoricum -->
@@ -800,7 +800,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="de">Limes Noricum</rdfs:label>
         <rdfs:label xml:lang="en">Limes Noricum</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesPannoniaInferior -->
@@ -810,7 +810,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="de">Limes Pannonia Inferior</rdfs:label>
         <rdfs:label xml:lang="en">Limes Pannonia Inferior</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesPannoniaSuperior -->
@@ -820,7 +820,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="de">Limes Pannonia Superior</rdfs:label>
         <rdfs:label xml:lang="en">Limes Pannonia Superior</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesRoad -->
@@ -830,7 +830,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="en">Limes road</rdfs:label>
         <rdfs:label xml:lang="de">Limesstraße</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#LimesUpperGermanicRhaetian -->
@@ -840,7 +840,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="en">Limes Upper Germanic Rhaetian</rdfs:label>
         <rdfs:label xml:lang="de">Obergermanisch-Raetischer Limes</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#RomanRoad -->
@@ -851,7 +851,7 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="en">Roman road</rdfs:label>
         <rdfs:label xml:lang="de">römische Straße</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://onto.squirrel.link/ontology#WMDE-RENDER -->
@@ -863,10 +863,10 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
         <rdfs:label xml:lang="en">Limesmap DAI/WIKIPEDIA-LIMESPROJEKT/WIKIDATA/WMDE-RENDER</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://docs.google.com/spreadsheets/d/1SHD79Ko275BrigRa-cEcLyJ1lXE7GHQOvrX4E2px6Ec"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotations
@@ -882,4 +882,3 @@ A D1 Digital Object does not depend on a specific physical carrier, and it can e
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
